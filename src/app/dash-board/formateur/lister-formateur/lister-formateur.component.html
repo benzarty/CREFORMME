@@ -1,0 +1,27 @@
+<div class="mdl-cell mdl-col--12-col">
+<table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp mdl-cell mdl-cell--8-col">
+  <thead>
+  <tr>
+    <th >cin</th>
+    <th>nom</th>
+    <th>prenom</th>
+    <th>email</th>
+    <th>num tel</th>
+    <th>adresse</th>
+    <th>disponibilite</th>
+
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let form of formateurs">
+      <td>{{form.cin}}</td>
+      <td>{{form.nom}}</td>
+      <td>{{form.prenom}}</td>
+      <td>{{form.email}}</td>
+      <td>{{form.numeroTel}}</td>
+      <td>{{form.adresse}}</td>
+      <td>{{form.disponibilite}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

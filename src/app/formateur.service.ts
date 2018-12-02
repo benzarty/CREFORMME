@@ -12,4 +12,10 @@ export class FormateurService {
 
     return this.http.get('http://localhost:8089/api/formateurs');
   }
+  public postFormateur(body){
+    return this.http.post('http://localhost:8089/api/formateur', body);
+  }
+  public delete(x) {
+    return this.http.delete('http://localhost:8089/api/formateur/'+x);
+  }
 }

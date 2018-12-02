@@ -10,8 +10,18 @@ export class ListerFormateurComponent implements OnInit {
    public formateurs ;
   constructor(private service: FormateurService) { }
 
+  supprimer(x){
+    this.service.delete(x).subscribe(res => this.get());
+    console.log(x);
+
+  }
+  get(){
+    this.service.getFormateurs().subscribe(formateur => this.formateurs = formateur);
+  }
   ngOnInit() {
-      this.service.getFormateurs().subscribe(formateur => this.formateurs=formateur);
+    // @ts-ignore
+    document.getElementsByTagName('app-lister-formateur')[0].style= 'width:100%';
+    this.get();
   }
 
 }

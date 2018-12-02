@@ -1,3 +1,43 @@
-<p>
-  ajouter-formateur works!
-</p>
+<div class="mdl-grid ">
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <form   (ngSubmit)="ajouter($event)"><div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="cin">
+          <label class="mdl-textfield__label" for="cin">cin</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="nom">
+          <label class="mdl-textfield__label" for="nom">nom</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="prenom">
+          <label class="mdl-textfield__label" for="prenom">prenom</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="email">
+          <label class="mdl-textfield__label" for="email">email</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="adresse">
+          <label class="mdl-textfield__label" for="adresse">Text...</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="disponibilite">
+          <label class="mdl-textfield__label" for="disponibilite">disponibilite</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+          <input class="mdl-textfield__input" type="text" id="num">
+          <label class="mdl-textfield__label" for="num">num</label>
+        </div>
+
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <button type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Ajouter
+      </button>
+    </div>
+    </form>
+  </div>
+</div>
+

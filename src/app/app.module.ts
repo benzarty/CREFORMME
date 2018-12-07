@@ -9,6 +9,9 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
 import { AjouterFormateurComponent } from './dash-board/formateur/ajouter-formateur/ajouter-formateur.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {ModifierFormateurComponent} from './dash-board/formateur/modifier-formateur/modifier-formateur.component';
+import { FormationComponent } from './dash-board/formation/ajout-formation/formation.component';
+import { ListerFormationComponent } from './dash-board/formation/lister-formation/lister-formation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
     ServiceadminComponent,
     ListerFormateurComponent,
     DashBoardComponent,
-    AjouterFormateurComponent
+    AjouterFormateurComponent,
+    ModifierFormateurComponent,
+    FormationComponent,
+    ListerFormationComponent,
 
   ],
   imports: [

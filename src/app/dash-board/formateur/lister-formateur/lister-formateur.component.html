@@ -1,17 +1,16 @@
-
-<div class="mdl-grid"  >
+<div class="mdl-grid">
   <div class="mdl-cell mdl-cell--1-col" ></div>
 <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp mdl-cell ">
   <thead>
   <tr>
-    <th >cin</th>
-    <th>nom</th>
-    <th>prenom</th>
-    <th>email</th>
-    <th>num tel</th>
-    <th>adresse</th>
-    <th>disponibilite</th>
-    <th colspan="2" style="text-align: center">actions</th>
+    <th >Cin</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Email</th>
+    <th>Num tel</th>
+    <th>Adresse</th>
+    <th>Disponibilite</th>
+    <th colspan="2" style="text-align: center">Actions</th>
 
   </tr>
   </thead>
@@ -24,8 +23,10 @@
       <td>{{form.numeroTel}}</td>
       <td>{{form.adresse}}</td>
       <td>{{form.disponibilite}}</td>
-      <td><button >modifier</button></td>
-      <td><button (click)="supprimer(form.cin)">supprimer</button></td>
+      <td><button routerLink="../modifier/{{form.cin}}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        modifier
+      </button></td>
+      <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="supprimer(form.cin)">supprimer</button></td>
     </tr>
   </tbody>
 </table>

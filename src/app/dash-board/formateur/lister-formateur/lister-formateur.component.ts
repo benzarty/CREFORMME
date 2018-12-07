@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormateurService} from '../../../formateur.service';
+import {FormateurService} from '../../../Service/formateur.service';
 
 @Component({
   selector: 'app-lister-formateur',
@@ -11,6 +11,7 @@ export class ListerFormateurComponent implements OnInit {
   constructor(private service: FormateurService) { }
 
   supprimer(x){
+    if(confirm('voulez vous supprimer'))
     this.service.delete(x).subscribe(res => this.get());
     console.log(x);
 

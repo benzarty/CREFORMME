@@ -5,6 +5,8 @@ import {ServiceadminComponent} from './Serviceadmin/serviceadmin.component';
 import {DashBoardComponent} from './dash-board/dash-board.component';
 import {ListerFormateurComponent} from './dash-board/formateur/lister-formateur/lister-formateur.component';
 import {AjouterFormateurComponent} from './dash-board/formateur/ajouter-formateur/ajouter-formateur.component';
+import {ModifierFormateurComponent} from './dash-board/formateur/modifier-formateur/modifier-formateur.component';
+import {ListerFormationComponent} from './dash-board/formation/lister-formation/lister-formation.component';
 
 
 const routes: Routes = [
@@ -17,9 +19,13 @@ const routes: Routes = [
   {
    path: 'dashboard', component: DashBoardComponent, children: [{
      path: 'formateur/lister', component: ListerFormateurComponent
-    },{
+    }, {
      path: 'formateur/ajouter', component: AjouterFormateurComponent
-    }]
+    }, { path: 'formateur/modifier/:id', component: ModifierFormateurComponent
+    }, { path: 'formation/lister', component: ListerFormationComponent}
+
+
+]
   }
   ]
 ;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormateurService} from '../../../formateur.service';
+import {FormateurService} from '../../../Service/formateur.service';
 import {Router} from '@angular/router';
 
 
@@ -35,8 +35,7 @@ export class AjouterFormateurComponent implements OnInit {
   ngOnInit() {
 
 
-    // @ts-ignore
-    document.getElementsByTagName('app-ajouter-formateur')[0].style = 'width:100%';
+
 
 
 

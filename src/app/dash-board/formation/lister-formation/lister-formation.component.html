@@ -1,0 +1,35 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--1-col" ></div>
+  <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp mdl-cell ">
+    <thead>
+    <tr>
+      <th >idFormation</th>
+      <th>description</th>
+      <th>dateFormation</th>
+      <th>prix</th>
+      <th>Formateur</th>
+
+      <th colspan="2" style="text-align: center">Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let form of formation">
+      <td>{{form.cin}}</td>
+      <td>{{form.nom}}</td>
+      <td>{{form.prenom}}</td>
+      <td>{{form.email}}</td>
+      <td>{{form.numeroTel}}</td>
+
+      <td><button routerLink="../modifier" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        modifier
+      </button></td>
+      <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="supprimer(form.cin)">supprimer</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<button  routerLink="../ajouter" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="right:15px;bottom:30px;position: fixed;">
+  <i class="material-icons">add</i>
+</button>

@@ -1,0 +1,43 @@
+
+<form #form="ngForm" >
+  <div class="row">
+    <div class="col">
+      <label for="cin">Cin</label>
+      <input type="text" class="form-control" placeholder="cin" id="cin" name="cin" [(ngModel)]="formateur.cin">
+    </div>
+    <div class="col">
+      <label for="nom">Nom</label>
+      <input type="text" class="form-control" placeholder="nom" id="nom"  name="nom" [(ngModel)]="formateur.nom">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="prenom">prenom</label>
+      <input type="text" class="form-control" placeholder="prenom" id="prenom" name="prenom" [(ngModel)]="formateur.prenom">
+    </div>
+    <div class="col">
+      <label for="disponibilite">disponibilite</label>
+      <input type="text" class="form-control" placeholder="disponibilite" name="disponibilite" id="disponibilite" [(ngModel)]="formateur.disponibilite">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="Email address">Email address</label>
+      <input type="text" class="form-control" placeholder="Email address" name="email" id="Email address" [(ngModel)]="formateur.email">
+    </div>
+    <div class="col">
+      <label for="num">num</label>
+      <input type="text" class="form-control" placeholder="num" id="num" name="numeroTel" [(ngModel)]="formateur.numeroTel">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="adresse">adresse</label>
+      <input type="text" class="form-control" placeholder="adresse" name="adresse" id="adresse" [(ngModel)]="formateur.adresse">
+    </div>
+  </div>
+  <div style="text-align: center">
+  <button type="submit" class="btn btn-success">  Modifier</button></div>
+</form>

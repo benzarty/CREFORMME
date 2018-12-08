@@ -14,17 +14,18 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let form of formation">
-      <td>{{form.cin}}</td>
-      <td>{{form.nom}}</td>
-      <td>{{form.prenom}}</td>
-      <td>{{form.email}}</td>
-      <td>{{form.numeroTel}}</td>
+    <tr *ngFor="let form of formations">
+      <td>{{form.idFormation}}</td>
+      <td>{{form.description}}</td>
+      <td>{{form.dateFormation}}</td>
+      <td>{{form.prix}}</td>
+      <td>{{form.formateur.nom}}</td>
+
 
       <td><button routerLink="../modifier" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
         modifier
       </button></td>
-      <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="supprimer(form.cin)">supprimer</button></td>
+      <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="supprimer(form.idFormation)">supprimer</button></td>
     </tr>
     </tbody>
   </table>

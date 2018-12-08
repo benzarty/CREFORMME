@@ -1,45 +1,37 @@
-<form>
-  <div class="form-row">
-    <div class="col">
-      <label>Email address</label>
-
-      <input type="text" class="form-control" placeholder="First name">
-    </div>
-    <div class="col">
-      <label>Email address</label>
-      <input type="text" class="form-control" placeholder="Last name">
-    </div>
-  </div>
+<form (submit)="submit($event)" >
   <div class="form-row">
     <div class="col">
       <label>idFormation</label>
 
-      <input type="text" class="form-control" placeholder="idFormation" id="idFormation">
+      <input type="text" class="form-control" placeholder="idFormation" id="idFormation" name="idFormation" [(ngModel)]="formation.idFormation">
     </div>
     <div class="col">
       <label>description</label>
-      <input type="text" class="form-control" placeholder="description" id="description">
+      <input type="text" class="form-control" placeholder="description" id="description" name="description" [(ngModel)]="formation.description">
     </div>
   </div>
   <div class="form-row">
     <div class="col">
       <label>dateFormation</label>
 
-      <input type="date" class="form-control" placeholder="dateFormation">
+      <input type="date" class="form-control" placeholder="dateFormation" name="dateFormation" [(ngModel)]="formation.dateFormation">
     </div>
     <div class="col">
       <label>prix</label>
-      <input type="number" class="form-control" placeholder="description" id="prix">
+      <input type="number" class="form-control" placeholder="prix" id="prix" name="prix" [(ngModel)]="formation.prix">
     </div>
 
   </div>
   <div class="form-row">
-    <div class="col">
-      <label>Formateur</label>
-
-      <input type="text" class="form-control" placeholder="Formateur" id="Formateur">
+    <div class="form-group">
+      <label for="sel1">Select list:</label>
+      <select class="form-control" id="sel1" name="formateur" (change)="getForm($event)">
+        <option [value]="form.cin"  *ngFor="let form of formateurs">{{form.nom}}  {{form.prenom}} </option>
+      </select>
     </div>
 
 
   </div>
+  <div style="text-align: center">
+  <button type="submit" class="btn btn-success">Ajouter</button></div>
 </form>

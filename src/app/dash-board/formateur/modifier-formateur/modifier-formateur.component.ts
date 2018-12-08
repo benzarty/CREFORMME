@@ -14,10 +14,14 @@ export class ModifierFormateurComponent implements OnInit {
     public idFormateur;
     public formateur: Formateur;
 
+    submit(e) {
+      e.preventDefault();
+      this.formateurService.putFormateur(this.actRoute.snapshot.params.id,this.formateur).subscribe(rs => console.log(rs));
+    }
   ngOnInit() {
     this.idFormateur = this.actRoute.snapshot.params.id;
     console.log(this.idFormateur);
-    this.formateurService.getFormateurById(this.idFormateur).subscribe((result: Formateur) => {
+    this.formateurService.getFormateur(this.idFormateur).subscribe((result: Formateur) => {
       this.formateur = result;
       console.log(this.formateur);
     });

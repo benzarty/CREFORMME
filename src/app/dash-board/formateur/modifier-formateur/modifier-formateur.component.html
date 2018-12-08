@@ -1,5 +1,5 @@
 
-<form #form="ngForm" >
+<form #form="ngForm" (submit)="submit($event)">
   <div class="row">
     <div class="col">
       <label for="cin">Cin</label>

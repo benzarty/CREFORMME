@@ -1,3 +1,38 @@
-<p>
-  modifier-formateur works!
-</p>
+<div class="mdl-grid ">
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <form   (ngSubmit)="ajouter($event)"><div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+        <input class="mdl-textfield__input" type="text" id="idFormation">
+        <label class="mdl-textfield__label" for="idFormation">idFormation</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+        <input class="mdl-textfield__input" type="text" id="description">
+        <label class="mdl-textfield__label" for="description">description</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+        <input class="mdl-textfield__input" type="date" id="dateFormation">
+        <label class="mdl-textfield__label" for="dateFormation">dateFormation</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+        <input class="mdl-textfield__input" type="int" id="prix">
+        <label class="mdl-textfield__label" for="prix">prix</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--5-col">
+        <input class="mdl-textfield__input" type="text" id="formateur">
+        <label class="mdl-textfield__label" for="formateur">formateur</label>
+      </div>
+
+
+
+
+    </div>
+      <div style="text-align: center">
+        <div class="mdl-card__actions mdl-card--border">
+          <button type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Ajouter
+          </button>
+        </div></div>
+    </form>
+  </div>
+</div>

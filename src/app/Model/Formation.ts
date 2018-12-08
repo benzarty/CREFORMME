@@ -6,6 +6,6 @@ public idFormation
   public description: String
   public dateFormation: String
   public prix: number
-  public Formateur: Formateur;
+  public formateur: Formateur;
 
 }
